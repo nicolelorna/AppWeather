@@ -10,9 +10,8 @@ object ApiClient {
 
     var client = OkHttpClient.Builder().build()
 
-
     var retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl(BASE_URL)
+        .baseUrl(BASE_URL )
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
         .build()
